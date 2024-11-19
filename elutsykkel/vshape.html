@@ -6,44 +6,63 @@
     <title>V-shape arendusmudel</title>
 </head>
 <body>
-    <h1>mudel</h1>
-    <p>description
+    <h1>V-shape arendusmudel</h1>
+    <p>
+        V-mudel on tarkvaraarenduse elu tsükli protsess, mis ühendab arenduse ja testimise etapid vastavatesse "verifitseerimise" ja "valideerimise" faasidesse. Mudeli nimi tuleneb oma kujust, kus erinevad etapid on jagatud kahte külge, moodustades "V"-kujundi.
     </p>
-    <h2>mudeli etapid on järgmised:</h2>
+    <h2>V-shape arendusmudeli etapid on järgmised:</h2>
     <ol>
-        <li><b></b></li>
-        <p></p>
-        <li><b></b></li>
-        <p></p>
-        <li><b></b></li>
-        <p></p>
-        <li><b></b></li>
-        <p></p>
+        <li><b>Nõuete kogumine ja analüüs</b></li>
+        <p>Esimeses etapis kogutakse klientide nõuded tarkvara arendamiseks ning määratakse projekti ulatus.</p>
+        <li><b>Süsteemi projekteerimine</b></li>
+        <p>Projekteerimise faasis luuakse tarkvara arhitektuur ja disain, sealhulgas nii kõrgetasemeline disain (HLD) kui ka detailne disain.</p>
+        <li><b>Rakendamine</b></li>
+        <p>Arendatakse tarkvara vastavalt koostatud disainile.</p>
+        <li><b>Testimine</b></li>
+        <p>Tarkvara testitakse, et veenduda, et see vastab klientide nõudmistele ja on kvaliteetne.</p>
+        <li><b>Paigaldamine</b></li>
+        <p>Tarkvara paigaldatakse ja viiakse kasutusse.</p>
+        <li><b>Hooldus</b></li>
+        <p>Tarkvara hooldatakse, et tagada selle vastavus klientide muutuvatele nõudmistele.</p>
     </ol>
+    <h2>V-shape arendusmudeli testimisfaasid:</h2>
+    <p>
+        V-mudelis on iga arenduse etapp seotud vastava <b>testimisfaasiga</b>, et tagada nõuete täitmine iga arenduse ja testimise tasandi kohta.
+    </p>
+    <ul>
+        <li><b>Üksustestimine</b></li>
+        <p>Testitakse väiksemaid tarkvaramooduleid, et veenduda, et iga osa töötab õigesti.</p>
+        <li><b>Integratsioonitestimine</b></li>
+        <p>Testitakse moodulite vahelist koostööd, et tagada nende üksteisega töötamise sujuvus.</p>
+        <li><b>Süsteemi testimine</b></li>
+        <p>Testitakse kogu süsteemi terviklikkust, et veenduda, et kõik osad töötavad koos.</p>
+        <li><b>Kasutajate aktsepteerimistestimine (UAT/User Acceptance Testing)</b></li>
+        <p>Lõpuks testitakse tarkvara reaalsetes kasutusoludes, et veenduda, et see täidab algsed nõudmised.</p>
+    </ul>
     <h2>Visuaalselt protsess näeb välja niimodi:</h2>
-    <img src="schema_placeholder", alt="mudeli visuaalne skeem"/>
+    <img src="../pildid/vshape schema.jpg", alt="V-shape arendusmudeli visuaalne skeem"/>
     <table>
         <tr>
-            <td><b>mudeli head</b></td>
-            <td><b>mudeli vead</b></td>
+            <td><b>V-shape arendusmudeli head</b></td>
+            <td><b>V-shape arendusmudeli vead</b></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Kõik arendusetapid on seotud testimisega, mis aitab vigu varakult tuvastada, vähendades hilisema arendustöö kulusid.</td>
+            <td>Kuna V-mudel järgib ranget järjekorda, võib see olla keeruline, kui nõuded muutuvad arenduse käigus.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Iga arendusetapi ja testimisfaasi vahel on selged seosed, mis aitavad vältida segadust ja tagavad sujuva tööprotsessi.</td>
+            <td>Mudel võib olla aeganõudev, kuna iga etapi lõpus tuleb põhjalikult dokumenteerida ja testida.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>V-mudel soodustab koostööd arendajate ja testijate vahel, võimaldades paremat kommunikatsiooni ja arusaamist projekti nõudmistest ja disainist.</td>
+            <td>V-mudel ei sobi keerukate ja kiiresti muutuvate süsteemide arendamiseks, kuna iga etapp on väga järjepidev ja üksnes järjestikune.</td>
         </tr>
     </table>
     <h2>Link kasutatud materjalile:</h2>
-    <a href="add_sauce">Link</a>
+    <a href="https://geeksforgeeks.org/software-engineering-sdlc-v-model/">Link</a>
     </br>
     </br>
-    <img src="gif_placeholder">
+    <img src="../pildid/v-shape.gif">
 </body>
 </html>
