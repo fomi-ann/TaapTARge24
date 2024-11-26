@@ -1,49 +1,107 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minu Tarkvara Arendusprotsessi Ainemapp</title>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Minu Tarkvara Arendusprotsessi Ainemapp</title>
+   <link href="styles.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container-md">
+      
       <h1>Tarkvara Arendusprotsessi Tehtud tööde konspekt</h1>
-      <hr/>
-      <ul>
-         <li> <a href="elutsykkel/waterfall.html">Waterfalli arendusmudel</a> </li>
-         <li> <a href="elutsykkel/inkrementaalne.html">Inkrementaalne arendusmudel</a> </li>
-         <li> <a href="elutsykkel/spriraal.html">Spiraalmudel</a> </li>
-         <li> <a href="elutsykkel/prototuupimine.html">Prototüüpimine</a> </li>
-         <li> <a href="elutsykkel/agile.html">Agile arendusmudel</a></li>
-         <li> <a href="elutsykkel/bigbang.html">Big Bang arendusmudek</a></li>
-         <li> <a href="elutsykkel/devops.html">DevOps arendusmudel</a></li>
-         <li> <a href="elutsykkel/vshape.html">V-shape arendusmudel</a></li>
-         <li> <a href="elutsykkel/xp.html">(XP) Extreme Programming</a></li>
-         <li> <a href="casevahendid/main.html">CASE vahendid</a></li>
-
+      <div id="konspektide list " class="container">
          
-      </ul>
+
+         <ul class="list-group">
+            <a href="elutsykkel/waterfall.html" class="list-group-item list-group-item-action">Waterfalli arendusmudel</a>
+            <a href="elutsykkel/inkrementaalne.html" class="list-group-item list-group-item-action">Inkrementaalne arendusmudel</a>
+            <a href="elutsykkel/spriraal.html" class="list-group-item list-group-item-action">Spiraalmudel</a>
+            <a href="elutsykkel/prototuupimine.html" class="list-group-item list-group-item-action">Prototüüpimine</a>
+            <a href="elutsykkel/agile.html" class="list-group-item list-group-item-action">Agile arendusmudel</a>
+            <a href="elutsykkel/bigbang.html" class="list-group-item list-group-item-action">Big Bang arendusmudek</a>
+            <a href="elutsykkel/devops.html" class="list-group-item list-group-item-action">DevOps arendusmudel</a>
+            <a href="elutsykkel/vshape.html" class="list-group-item list-group-item-action">V-shape arendusmudel</a>
+            <a href="elutsykkel/xp.html" class="list-group-item list-group-item-action">(XP) Extreme Programming</a>
+            <a href="casevahendid/main.html" class="list-group-item list-group-item-action">CASE vahendid</a>
+         </ul>
+
+         <!--         
+         <ul class="list-group">
+            <li class="list-group-item"> <a href="elutsykkel/waterfall.html">Waterfalli arendusmudel</a> </li>
+            <li class="list-group-item"> <a href="elutsykkel/inkrementaalne.html">Inkrementaalne arendusmudel</a> </li>
+            <li class="list-group-item"> <a href="elutsykkel/spriraal.html">Spiraalmudel</a> </li>
+            <li class="list-group-item"> <a href="elutsykkel/prototuupimine.html">Prototüüpimine</a> </li>
+            <li class="list-group-item" > <a href="elutsykkel/agile.html">Agile arendusmudel</a></li>
+            <li class="list-group-item"> <a href="elutsykkel/bigbang.html">Big Bang arendusmudek</a></li>
+            <li class="list-group-item"> <a href="elutsykkel/devops.html">DevOps arendusmudel</a></li>
+            <li class="list-group-item"> <a href="elutsykkel/vshape.html">V-shape arendusmudel</a></li>
+            <li class="list-group-item"> <a href="elutsykkel/xp.html">(XP) Extreme Programming</a></li>
+            <li class="list-group-item"> <a href="casevahendid/main.html">CASE vahendid</a></li>
+         </ul>
+         -->
+
+      </div>
+      
       <br/>
       <br/>
-      <br/>
-      <br/>
-      -------------------------------------------------------
-      <h2> Minust </h2>
-      <table>
-         <tr>
-            <td>Nimi</td>
-            <td>Mida teen</td>
-            <td>Kust tulen</td>
-            <td>Pilt</td>
-         </tr>
-         <tr>
-            <td>Anna Fomina</td>
-            <td>Olen õpilane</td>
-            <td>Valgast</td>
-            <td> <img src="./pildid/minu-foto.jpg" height="300", alt="Anna Fomina portrait"></td>
-         </tr>
-         <tr>
-            <td colspan="4"><a href="https://github.com/fomi-ann">Siin on minu github profiil</a></td>
-         </tr>
-      </table>
- </body>
- </html>
+
+
+         <div class="d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 720px">
+               <div class="row g-0">
+               <div class="col-md-4">
+                  <img src="./pildid/minu-foto.jpg" class="img-fluid rounded" alt="Anna Fomina portrait">
+               </div>
+               <div class="col-md-8">
+                     <div class="card-body">
+                        <table id="Personal info table" class="table table-bordered">
+                           <tr>
+                              <td><b>Nimi:</b></td>
+                              <td>Anna Fomina</td>
+                           </tr>
+                           <tr>
+                              <td><b>Mida teen:</b></td>
+                              <td>Olen õpilane</td>
+                           </tr>
+                           <tr>
+                              <td><b>Õppeasutus:</b></td>
+                              <td>Tallinna Tööstushariduskeskus</td>
+                           </tr>
+                           <tr>
+                              <td><b>Õppekava:</b></td>
+                              <td>Noorem tarkvaraarendaja</td>
+                           </tr>
+                           <tr>
+                              <td><b>Grupp:</b></td>
+                              <td>TARge24</td>
+                           </tr>
+                           <tr>
+                              <td><b>Kust tulen:</b></td>
+                              <td>Valgast</td>
+                           </tr>
+                        </table>
+
+                        <div class="d-flex justify-content-center">
+                           <a href="https://github.com/fomi-ann"><i class="bi bi-github" style="font-size: 2rem; text-decoration: none;" ></i></a>
+                        </div>
+                     </div>
+               </div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+   </div>
+      
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
