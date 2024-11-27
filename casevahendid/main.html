@@ -4,46 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASE vahendid</title>
+    <link href="styles.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>CASE vahendid</h1>
-    <h2>Mis on CASE vahendid?</h2>
-    <p><b>CASE (Computer-Aided Software Engineering) vahendid</b> on tarkvaraarenduse abivahendid, mis aitavad arendajatel süsteemide projekteerimisel, arendamisel, testimisel ja hooldamisel. Need vahendid toetavad kõiki tarkvaraarenduse etappe, võimaldades protsesside automatiseerimist ja kvaliteedi tagamist.</p>
-    <h2>Kuidas jaotatakse CASE vahemdeid</h2>
-    <p>CASE vahendid jaotatakse järgmistesse kategooriatesse:
-    <ul>
-        <li><a href="/casevahendid/uppercase.html">UPPER CASE tools</a> - „ülemise taseme" CASE vahendid</li>
-            <p>
-                Need on üldiselt kõikide tarkvaraprotsesside toetamiseks mõeldud vahendid, mis hõlmavad näiteks projektijuhtimise, analüüsi ja disaini tööriistu.
-            </p>
-            <li><a href="/casevahendid/lowercase.html">lower CASE tools</a> - „alumise taseme" CASE vahendid</li>
-            <p>
-                Need on suunatud konkreetsete tarkvaraarenduse etappide (nt koodigeneratsioon, testimine) toetamiseks. Näiteks disainivahendid, testimisvahendid jne.
-            </p>
-    </ul>
-    <h2>Mille jaoks neid kasutatakse?</h2>
-    <p>CASE vahendeid kasutatakse tarkvaraarenduse kõikide etappide toetamiseks:
-    <ul>
-        <li><b>Analüüs ja disain</b> – abistavad süsteemi nõuete kogumisel ja arhitektuuri loomisel.</li>
-        <li><b>Koodigeneratsioon</b> – automaatne koodi kirjutamine vastavalt loodud disainile.</li>
-        <li><b>Testimine</b> – tarkvara kvaliteedi tagamiseks kasutatavad tööriistad, mis võimaldavad testide automatiseerimist.</li>
-        <li><b>Hooldus</b> – toed tarkvara pideva täiustamise ja veaparanduse protsessidele.</li>
-    </ul>
-    <h2>Milliseid vahendeid saab kasutada Agile arendusmudeli elutsüklis?</h2>
-    <ol>
-        <li><b><i>Nõuete määratlemine üldisel tasandil:</i></b></li>
-        <p>Jira, Azure DevOps, Confluence</p>
-        <li><b><i>Tarneosade määramine:</i></b></li>
-        <p>Jira, Trello, Miro</p>
-        <li><b><i>Kõrgema prioriteediga osade detailiseerimine ja arendus:</i></b></li>
-        <p>Jira, VersionOne, Asana</p>
-        <li><b><i>Töö käigus olevate osade külmutamine:</i></b></li>
-        <p>Git(GitHub või GitLab), Bitbucket</p>
-        <li><b><i>Tarnimine ja kliendile katsetamiseks andmine:</i></b></li>
-        <p>Jenkins, CircleCI, Docker, TestRail</p>
-        <li><b><i>Tagasiside alusel nõuete täpsustamine:</i></b></li>
-        <p>Jira, UserVoice, Productboard, Miro</p>
-    </ol>
-    <h2>Link kasutatud materjalile</h2>
+    <div class="container-md">
+        <div id="navbar"  class="sticky-top"></div>
+        <script src="../scripts/navbar.js"></script>
+        
+        <h1>CASE vahendid</h1>
+
+        <h2>Mis on CASE vahendid?</h2>
+        <p><b>CASE (Computer-Aided Software Engineering) vahendid</b> on tarkvaraarenduse abivahendid, mis aitavad arendajatel süsteemide projekteerimisel, arendamisel, testimisel ja hooldamisel. Need vahendid toetavad kõiki tarkvaraarenduse etappe, võimaldades protsesside automatiseerimist ja kvaliteedi tagamist.</p>
+        <h2>Kuidas jaotatakse CASE vahemdeid</h2>
+        <p>CASE vahendid jaotatakse järgmistesse kategooriatesse:
+        <ul>
+            <li><a href="/casevahendid/uppercase.html">UPPER CASE tools</a> - „ülemise taseme" CASE vahendid</li>
+                <p>
+                    Need on üldiselt kõikide tarkvaraprotsesside toetamiseks mõeldud vahendid, mis hõlmavad näiteks projektijuhtimise, analüüsi ja disaini tööriistu.
+                </p>
+                <li><a href="/casevahendid/lowercase.html">lower CASE tools</a> - „alumise taseme" CASE vahendid</li>
+                <p>
+                    Need on suunatud konkreetsete tarkvaraarenduse etappide (nt koodigeneratsioon, testimine) toetamiseks. Näiteks disainivahendid, testimisvahendid jne.
+                </p>
+        </ul>
+        <h2>Mille jaoks neid kasutatakse?</h2>
+        <p>CASE vahendeid kasutatakse tarkvaraarenduse kõikide etappide toetamiseks:
+        <ul>
+            <li><b>Analüüs ja disain</b> – abistavad süsteemi nõuete kogumisel ja arhitektuuri loomisel.</li>
+            <li><b>Koodigeneratsioon</b> – automaatne koodi kirjutamine vastavalt loodud disainile.</li>
+            <li><b>Testimine</b> – tarkvara kvaliteedi tagamiseks kasutatavad tööriistad, mis võimaldavad testide automatiseerimist.</li>
+            <li><b>Hooldus</b> – toed tarkvara pideva täiustamise ja veaparanduse protsessidele.</li>
+        </ul>
+        <h2>Milliseid vahendeid saab kasutada Agile arendusmudeli elutsüklis?</h2>
+        <ol>
+            <li><b><i>Nõuete määratlemine üldisel tasandil:</i></b></li>
+            <p>Jira, Azure DevOps, Confluence</p>
+            <li><b><i>Tarneosade määramine:</i></b></li>
+            <p>Jira, Trello, Miro</p>
+            <li><b><i>Kõrgema prioriteediga osade detailiseerimine ja arendus:</i></b></li>
+            <p>Jira, VersionOne, Asana</p>
+            <li><b><i>Töö käigus olevate osade külmutamine:</i></b></li>
+            <p>Git(GitHub või GitLab), Bitbucket</p>
+            <li><b><i>Tarnimine ja kliendile katsetamiseks andmine:</i></b></li>
+            <p>Jenkins, CircleCI, Docker, TestRail</p>
+            <li><b><i>Tagasiside alusel nõuete täpsustamine:</i></b></li>
+            <p>Jira, UserVoice, Productboard, Miro</p>
+        </ol>
+        <h2>Link kasutatud materjalile</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

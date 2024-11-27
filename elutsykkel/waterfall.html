@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waterfall arendusmudel</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Waterfall arendusmudel</h1>
-    <p>
-        See on esimene kirjeldatud tarkvarasüsteemi elutsükli mudel. Mudeli autor on Winston W. Royce, kes kirjeldas oma mudelit aastal 1970. Mudeli aluseks on tavaline tootmisprotsess ja selle faasid.
-    </p>
-    <h2>Waterfall mudeli etapid on järgmised:</h2>
-    <ol>
-        <li><b>Nõuete määramine.</b></li>
-        <p>Määratakse süsteemi käitumine, jõudlus, liidesed jms, jaotatakse süsteemi analüüsiks ja nõuete analüüsiks.</p>
-        <li><b>Süsteemi ja tarkvara kavandamine.</b></li>
-        <p>Keskendutakse andmestruktuuridele, arhitektuurile, liideste omadustele ja algoritmidele. Kvaliteet on hinnatav, tulemused dokumenteeritakse.</p>
-        <li><b>Teostus ja moodulite testimine.</b></li>
-        <p>Süsteem programmeeritakse moodulitena, mis testitakse eraldi. Detailse projekti puhul on teostus lihtsam.</p>
-        <li><b>Integratsioon ja süsteemi testimine.</b></li>
-        <p>Moodulid integreeritakse ja testitakse kogu süsteemi. Kliendile antakse toode pärast funktsionaalsuse ja loogika testimist.</p>
-        <li><b>Kasutamine ja hooldus.</b></li>
-        <p>Pikaajaline faas, kus süsteemi muudetakse vastavalt kasutajate tagasisidele, keskkonnamuutustele või uutele nõudmistele. Kõiki eelnevaid faase korratakse süsteemi muutmise käigus.</p>
-    </ol>
-    <h2>Visuaalselt protsess näeb välja niimodi:</h2>
-    <img src="../pildid/waterfall schema.jpeg", alt="Waterfall visuaalne skeem"/>
-    <table>
-        <tr>
-            <td><b>Waterfall mudeli head</b></td>
-            <td><b>Waterfall mudeli vead</b></td>
-        </tr>
-        <tr>
-            <td>Kasutab selget struktuuri</td>
-            <td>Muudatuste tegemine on raske</td>
-        </tr>
-        <tr>
-            <td>Lõppeesmärk on määratud kohe algusest</td>
-            <td>Keskendub väga vähe lõppkasutajale/kliendile</td>
-        </tr>
-        <tr>
-            <td>Hästi edastab informatsioon edasi</td>
-            <td>Toode saab testida alles pärast valmimist</td>
-        </tr>
-    </table>
-    <h2>Link kasutatud materjalile:</h2>
-    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">Link</a>
-    </br>
-    </br>
-    <img src="../pildid/waterfall developer.gif"/>
+    <div class="container-md">
+        <div id="navbar"  class="sticky-top"></div>
+        <script src="../scripts/navbar.js"></script>
+        
+        <h1>Waterfall arendusmudel</h1>
+        <p>
+            See on esimene kirjeldatud tarkvarasüsteemi elutsükli mudel. Mudeli autor on Winston W. Royce, kes kirjeldas oma mudelit aastal 1970. Mudeli aluseks on tavaline tootmisprotsess ja selle faasid.
+        </p>
+        <h2>Waterfall mudeli etapid on järgmised:</h2>
+        <ol>
+            <li><b>Nõuete määramine.</b></li>
+            <p>Määratakse süsteemi käitumine, jõudlus, liidesed jms, jaotatakse süsteemi analüüsiks ja nõuete analüüsiks.</p>
+            <li><b>Süsteemi ja tarkvara kavandamine.</b></li>
+            <p>Keskendutakse andmestruktuuridele, arhitektuurile, liideste omadustele ja algoritmidele. Kvaliteet on hinnatav, tulemused dokumenteeritakse.</p>
+            <li><b>Teostus ja moodulite testimine.</b></li>
+            <p>Süsteem programmeeritakse moodulitena, mis testitakse eraldi. Detailse projekti puhul on teostus lihtsam.</p>
+            <li><b>Integratsioon ja süsteemi testimine.</b></li>
+            <p>Moodulid integreeritakse ja testitakse kogu süsteemi. Kliendile antakse toode pärast funktsionaalsuse ja loogika testimist.</p>
+            <li><b>Kasutamine ja hooldus.</b></li>
+            <p>Pikaajaline faas, kus süsteemi muudetakse vastavalt kasutajate tagasisidele, keskkonnamuutustele või uutele nõudmistele. Kõiki eelnevaid faase korratakse süsteemi muutmise käigus.</p>
+        </ol>
+        <h2>Visuaalselt protsess näeb välja niimodi:</h2>
+        <img src="../pildid/waterfall schema.jpeg", alt="Waterfall visuaalne skeem"/>
+        <table>
+            <tr>
+                <td><b>Waterfall mudeli head</b></td>
+                <td><b>Waterfall mudeli vead</b></td>
+            </tr>
+            <tr>
+                <td>Kasutab selget struktuuri</td>
+                <td>Muudatuste tegemine on raske</td>
+            </tr>
+            <tr>
+                <td>Lõppeesmärk on määratud kohe algusest</td>
+                <td>Keskendub väga vähe lõppkasutajale/kliendile</td>
+            </tr>
+            <tr>
+                <td>Hästi edastab informatsioon edasi</td>
+                <td>Toode saab testida alles pärast valmimist</td>
+            </tr>
+        </table>
+        <h2>Link kasutatud materjalile:</h2>
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">Link</a>
+        </br>
+        </br>
+        <img src="../pildid/waterfall developer.gif"/>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
