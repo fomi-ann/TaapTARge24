@@ -4,14 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERD diagrammid</title>
+    <link href="../styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<!--UML > ERD:
-    - Kirjeldab ära mis on ERD diagrammid
-    - Kus neid kasutatakse
-    - toob välja eraldi joonistega ühenduselemendid
-    - mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key?
-    - Viited infoallikaile
--->
+    <div class="container-md">
+        <div id="navbar"  class="sticky-top"></div>
+        <script src="../scripts/navbar.js"></script>
+
+        <h1>ERD diagramm</h1>
+        <h2 class="hpad">Mis on ERD diagrammid?</h2>
+        <p>
+            Entity Relationship Diagram (ERD) ehk Entiteedi-seoste diagramm on visuaalne tööriist, mis kirjeldab andmebaasi struktuuri. Need näitavad entiteete (andmeobjekte), nendevahelisi suhteid ja omadusi, et hõlbustada andmemudelite planeerimist ja mõistmist.
+        </p>
+        <h2 class="hpad">Kus neid kasutatakse?</h2>
+        <p>
+            ERD-sid kasutatakse andmebaaside projekteerimisel, süsteemi planeerimisel, protsesside modelleerimisel ja dokumentatsiooni loomisel, et struktureerida ja selgitada andmete loogilisi suhteid.
+        </p>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center">
+                    <div class="border rounded p-2 d-flex justify-content-center">
+                        <a href="../pildid/ERD/14-erd-example-loan-system.jpg"><img class="img-fluid" src="../pildid/ERD/14-erd-example-loan-system.jpg" alt="ERD näidis 2"/></a>
+                    </div>
+                    <p><i>ERD näidis - Laenusüsteem</i></p>
+                </div>
+                <div class="text-center">
+                    <div class="border rounded p-2 d-flex justify-content-center" style="margin-top: 24px;">
+                        <a href="../pildid/ERD/15-erd-example-online-shop.jpg"><img class="img-fluid" src="../pildid/ERD/15-erd-example-online-shop.jpg" alt="ERD näidis 3"/></a>
+                    </div>
+                    <p><i>ERD näidis - Veebipood</i></p>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+                <div class="text-center">
+                    <div class="border rounded p-2 d-flex justify-content-center">
+                        <a href="../pildid/ERD/13-erd-example-movie-rental-system.jpg"><img class="img-fluid" src="../pildid/ERD/13-erd-example-movie-rental-system.jpg" alt="ERD näidis 1"/></a>
+                    </div>
+                    <p><i>ERD näidis - Filmi laenutamise süsteem</i></p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="hpad">ERD ühenduselemendid</h2>
+        
+        <div class="row">
+            <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="../pildid/ERD/entity.jpg" />
+                </div>
+            </div>
+            <div class="col-8">
+                <h3>Entity / Entiteet</h3>
+                <p>
+                    Entiteet on määratletav asi või mõiste (nt õpilane, arve, profiil, tehing). Entiteet kuvatakse ümmarguse nurkadega ristkülikuna, millel on nimi peal ja atribuudid kehaosas.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-4">
+                <div class="d-flex justify-content-center">
+                    <img src="../pildid/ERD/entity atributes.jpg" />
+                </div>
+            </div>
+            <div class="col-8 d-flex align-items-center">
+                <div>
+                    <h3>Entity attribute / Entiteedi atribuud</h3>
+                    <p>
+                        Entiteedi atribuud on entiteedi omadus, mis on seotud selle nime ja tüübiga (nt varchar stringi jaoks, int täisarvu jaoks). Atribuudid võivad olla näiteks veerud, mis kirjeldavad entiteedi omadusi. ERD-l on oluline kasutada sihtandmebaasi toetatud atribuuditüüpe.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <h3 class="hpad">Relationship / Suhe</h3>
+        <p>
+            Kaks entiteeti on omavahel seotud, kui need on üksteisega mingil moel seotud. Näiteks võib õpilane registreeruda kursusele. Seetõttu on entiteet "Õpilane" seotud entiteediga "Kursus", ja suhe on kujutatud ühendusena nende vahel.
+        </p>
+
+        
+        <h3 class="hpad">Cardinality / Kardinaalsus</h3>
+        <p>
+            Kardinaalsus määrab, kui palju esinemisi ühes entiteedis on seotud esinemiste arvuga teises entiteedis. Näiteks ÜKS meeskond, kus on MITU mängijat. ERD-s tähistatakse kardinaalsust tavaliselt lõppudele kantud "krahvi jala" sümboliga.
+            Kolm levinud kardinaalsuse suhet on:
+        </p>
+
+        
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="p-3 border rounded d-flex flex-column" style="min-height: 300px;">
+                        <div class="row">
+                            <div>
+                                <h4>Üks-ühele / One-to-One</h4>
+                                <p>
+                                    Iga entiteedi A jaoks on ainult üks seotud entiteet B-ga.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="justify-content-center mt-4">
+                                <img class="img-fluid" src="../pildid/ERD/one-to-one-cardinality.jpg"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 border rounded d-flex flex-column" style="min-height: 300px;">
+                        <div class="row">
+                            <div>
+                                <h4>Üks-mitmele / One-to-Many</h4>
+                                <p>
+                                    Üks-mitmele (One-to-Many): Üks entiteet A võib olla seotud mitme entiteediga B, kuid B-l on ainult üks seos A-ga.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="justify-content-center mt-3">
+                                <img class="img-fluid" src="../pildid/ERD/one-to-many-cardinality.jpg">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 border rounded d-flex flex-column" style="min-height: 300px;">
+                        <div class="row">
+                            <div>
+                                <h4>Mitme-mitmele / Many-to-Many</h4>
+                                <p>
+                                    Entiteedid A ja B võivad olla seotud omavahel mitmesugustes kombinatsioonides.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="justify-content-center mt-3">
+                                <img class="img-fluid" src="../pildid/ERD/many-to-many-cardinality.jpg"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+              
+
+
+
+                
+            </div>
+        </div>
+
+        
+        <h3 class="hpad">Key / Võti</h2>
+        <p>
+            Üldine mõiste, mis viitab andmebaasis atribuudile või nende kombinatsioonile, mida kasutatakse ridade tuvastamiseks. Võtmete hulka kuuluvad supervõtmed, kandidaadivõtmed, primaarvõtmed ja võõrvõtmed.
+        </p>
+        <div class="container">
+            <div class="row justify-content-center g-3 px-0">
+                <div class="col-4">
+                    <div class="p-3 rounded" style="min-height: 250px; background-color: #B1F0F7">
+                        <h4>Primary Key / Primaarvõti</h4>
+                        <p>
+                            Unikaalne tunnus, mis identifitseerib iga rea tabelis üheselt. Seda kasutatakse andmebaasis ridade tuvastamiseks ja see ei tohi sisaldada korduvaid ega tühje väärtusi. Näiteks töötaja ID või kliendi number.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 rounded" style="min-height: 250px; background-color: #B1F0F7">
+                        <h4>Foreign Key / Võõrvõti</h4>
+                        <p>
+                            Atribuut, mis viitab teise tabeli primaarvõtmele. Võõrvõtmed loovad seoseid tabelite vahel, tagades andmete sidususe. Näiteks tellimustabelis võib olla kliendi ID, mis viitab klientide tabeli primaarvõtmele.
+                        </p>
+                    </div>    
+                </div>
+                <div class="col-4">
+                    <div class="p-3 rounded" style="min-height: 250px; background-color: #B1F0F7">
+                        <h4>Composite Key / Komposiitvõti</h4>
+                        <p>
+                            Koosneb kahest või enamast atribuudist, mis koos moodustavad unikaalse identifikaatori. Seda kasutatakse, kui üksik atribuut ei ole piisav rea tuvastamiseks. Näiteks kursuse ID ja õpilase ID paarina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center p-5">
+            <img class="img-fluid" src="../pildid/ERD/key-examples.png"/>
+        </div>
+
+        <h3 class="hpad">Siin on head ERD sümbolite viitejuhendid:</h3>
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <div class="border rounded p-3">
+                    <img class="img-fluid" src="../pildid/ERD/f92baca537abf26754ebda5bb63b71ea.jpg" alt="ERD element guide" />
+                </div>
+            </div>
+            <div class="col-6">
+                <img class="img-fluid" src="../pildid/ERD/5uwcF.png" alt="ERD diagram guide" />
+            </div>
+        </div>
+        <h2>Link kasutatud materjalile</h2>
+
+
+        <a href="https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/#:~:text=Entity%20Relationship%20Diagram%2C%20also%20known,inter%2Drelationships%20among%20these%20entities.">Link</a>
+        <a href="https://www.lucidchart.com/pages/er-diagrams">Link</a>
+        <a href="https://stackoverflow.com/questions/1154382/anyone-have-an-erd-symbols-quick-reference">Link</a>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
