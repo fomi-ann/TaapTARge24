@@ -2,16 +2,8 @@ h1 {
     padding-top: 30px;
 }
 
-h2 {
-    padding-top: 30px;
-}
-
-h3 {
-    padding-top: 30px;
-}
-
-h4 {
-    padding-top: 30px;
+.hpad {
+    padding-top: 2em;
 }
 
 
@@ -20,10 +12,14 @@ h4 {
     border-radius: 50%;
     object-fit: cover;
     width: 100%;
-    height: auto; /* Ensures the aspect ratio is preserved */
-    max-width: 200px; /* Adjust the size to your preference */
+    height: auto;
+    max-width: 200px;
 }
 
 .text-justified {
     text-align: justify;
+}
+
+#pointless {
+    list-style-type: none;
 }
