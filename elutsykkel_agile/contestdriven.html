@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous test-driven development</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-md">
+
+        <div id="navbar"  class="sticky-top"></div>
+        <script src="../scripts/navbar.js"></script>
+
+        <h1>Continuous test-driven development</h1>
+        <p>
+            Pidev testipõhine arendus (Continuous Test-Driven Development, CTDD) on tarkvaraarenduse praktika, mis laiendab TDD automaatse testide taustal käivitamise kaudu. See tähendab, et arendaja kirjutab esmalt testi, kuid ei pea seda käsitsi käivitama; testid töötavad automaatselt pideva testimise tööriista abil. See lähenemine vähendab aega, mis kulub testide käsitsi käivitamisele pärast iga arendusetappi, suurendades seeläbi arenduse efektiivsust.
+        </p>
+
+        <h2>Visuaalselt protsess näeb välja niimodi:</h2>
+        <div class="text-center"><img src="../pildid/elutsykkel_agile_skeemid/continuousTesting.png", alt="CTDD visuaalne skeem"/></div>
+        
+        <table class="table table-bordered table-hover">
+            <thead class="text-center">
+                <tr>
+                    <td><b>CTDD arendusstiili head</b></td>
+                    <td><b>CTDD arendusstiili vead</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Automaatne testide käivitamine annab arendajatele kohese tagasiside, võimaldades kiiret vigade avastamist ja parandamist.</td>
+                    <td>Pideva testimise tööriistade seadistamine ja integreerimine olemasolevasse arenduskeskkonda võib olla keeruline ja aeganõudev.</td>
+                </tr>
+                <tr>
+                    <td>Vähendades vajadust testide käsitsi käivitamise järele, saavad arendajad keskenduda rohkem koodi kirjutamisele ja refaktoreerimisele.</td>
+                    <td>Automaatne testide pidev käivitamine võib suurendada süsteemi ressursikasutust, mis võib mõjutada arenduskeskkonna jõudlust.</td>
+                </tr>
+                <tr>
+                    <td>Parem koodikvaliteet: Pidev testimine aitab tagada, et kood vastab nõuetele ja töötab ootuspäraselt, vähendades vigade arvu lõpp-produktis.</td>
+                    <td>Pidev testimine võib tekitada arendajates vale turvatunde, eeldades, et kõik probleemid avastatakse automaatselt, mis võib viia testide ja koodi kvaliteedi languseni.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Case-vahend, mis toetab antud arendusstiili arendusmeeskonnatööd</h2>
+        <div class="row p-3">
+            <div class="col-3 text-center">
+                <img class="img-fluid" style="max-height: 200px;" src="../pildid/elutsykkel_agile_skeemid/jenkins.svg">
+            </div>
+            <div class="col-9">
+                <p>
+                    <b>Jenkins</b> on avatud lähtekoodiga automaatikaserver, mida kasutatakse peamiselt pideva integreerimise (CI) ja pideva tarne (CD) protsesside haldamiseks. See võimaldab arendajatel automatiseerida tarkvara arendusprotsessi, alates koodi integreerimisest kuni testimise ja juurutamiseni.
+                </p>
+            </div>
+
+        <h2>Link kasutatud materjalile:</h2>
+        <a href="https://en.wikipedia.org/wiki/Continuous_test-driven_development">Link</a>
+        <a href="https://www.scitepress.org/papers/2013/45872/45872.pdf">Link</a>
+        <a href="https://www.jenkins.io/doc/">Link</a>
+    </div>
+</body>
+</html>

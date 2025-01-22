@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-driven design</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-md">
+
+        <div id="navbar"  class="sticky-top"></div>
+        <script src="../scripts/navbar.js"></script>
+
+        <h1>Domain-driven design</h1>
+        <p>
+            Domeeni-põhine disain (Domain-Driven Design, DDD) keskendub tarkvara modelleerimisele vastavalt äri- ja domeenivajadustele. DDD pooldab suurte süsteemide jagamist piiritletud kontekstideks (bounded contexts), kus igal kontekstil on oma sõltumatu mudel. Mudelite keele ja struktuuri osas julgustab DDD kasutama ärivaldkonnale vastavaid termineid – näiteks, kui tarkvara tegeleb laenutaotlustega, võiksid klassid ja meetodid olla nimetatud selliselt nagu "laenutaotlus", "kliendid" ja "pakkumise vastuvõtmine". Selle lähenemise üks aluspõhimõtteid on igapäevakeel (ubiquitous language), mis ühendab domeenispetsialistid ja arendajad, võimaldades selget ja ühist arusaama süsteemi nõuetest ja domeenimudelist.
+        </p>
+
+        <h2>Visuaalselt protsess näeb välja niimodi:</h2>
+        <div class="text-center"><img src="../pildid/elutsykkel_agile_skeemid/domain_driven_design.png" style="max-width: 800px;" alt="Domain-driven design visuaalne skeem"/></div>
+        
+        <table class="table table-bordered table-hover">
+            <thead class="text-center">
+                <tr>
+                    <td><b>Domain-driven disaini head</b></td>
+                    <td><b>Domain-driven disaini vead</b></td>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>Ühtne keel parandab arendajate ja domeeniekspertide koostööd.</td>
+                    <td>Iteratiivne protsess võib olla ajakulukas.</td>
+                </tr>
+                <tr>
+                    <td>Skaalautuvus ja paindlikkus - keerukad süsteemid jaotatakse hallatavateks osadeks.</td>
+                    <td>Nõuab suurt teadmistepagasit ja isolatsiooni tagamist.</td>
+                </tr>
+                <tr>
+                    <td>Süsteemi arusaamine, hooldamine ja muutmine on lihtsam.</td>
+                    <td>Mitte universaalne lahendus, sest sobib ainult keerukate domeenide jaoks.</td>
+                </tr>
+           </tbody>
+        </table>
+
+        <h2>Case-vahend, mis toetab antud arendusstiili arendusmeeskonnatööd</h2>
+        <div class="row p-3">
+            <div class="col-3 text-center">
+                <img class="img-fluid" src="../pildid/elutsykkel_agile_skeemid/CubicWeb_Logo_Spaced.svg.png">
+            </div>
+            <div class="col-9">
+                <p>
+                    <b>CubicWeb</b> on avatud lähtekoodiga veebiraamistik, mis keskendub andmemudelitele ja semantilise veebi tehnoloogiatele, nagu RDF ja OWL. See võimaldab arendajatel luua modulaarseid ja skaleeritavaid rakendusi, kasutades uuesti "kuupe" ehk komponente. Raamistik sobib hästi keerukate, andmepõhiste projektide jaoks.
+                </p>
+            </div>
+
+        </div>
+
+        <h2>Link kasutatud materjalile:</h2>
+        <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Link</a>
+        <a href="https://www.rst.software/blog/introduction-to-domain-driven-design-ddd-glossary">Link</a>
+        <a href="https://en.wikipedia.org/wiki/CubicWeb">Link</a>
+    </div>
+</body>
+</html>

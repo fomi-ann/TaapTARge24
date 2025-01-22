@@ -9,11 +9,11 @@ h1 {
 
 
 #avatar {
-    border-radius: 50%;
+    border-radius: 5%;
     object-fit: cover;
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 400%;
 }
 
 .text-justified {
